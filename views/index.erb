@@ -26,7 +26,7 @@
 <h2>Subfolders available</h2>
 <ul>
     <% @subdirectories.each do |subdir| %>
-    <a href="/subdir/<%=@parent%><%=subdir%>"><%=subdir%></a>
+    [<a href="/subdir/<%=@parent%><%=subdir%>"><%=subdir%></a>]
     <%end%>
 </ul>
 <%end%>
