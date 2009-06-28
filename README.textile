@@ -1,0 +1,11 @@
+h1. Frankie the music warez lister
+
+h2. Installation
+Install following ruby gems
+<pre>
+<code>
+    sudo gem install sinatra
+    sudo gem install ruby-mp3info
+    sudo gem install ruby-units
+</code>
+</pre>

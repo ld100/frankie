@@ -1,0 +1,32 @@
+<% unless @tracks.empty? %>
+<table cellspacing="0" cellpadding="0">	
+<tr>
+    <th>Filename</th>
+    <th>Artist</th>
+    <th>Title</th>
+    <th>Album</th>
+    <th>Year</th>
+    <th>Size</th>
+</tr>
+<% @tracks.each do |track | %>
+<tr>
+    <td><a href="<%= "#{@base_download_address}/#{track.file_name}" %>"><%= track.file_name %></a></td>
+    <td><%= track.artist %></td>
+    <td><%= track.title || "-" %></td>
+    <td><%= track.album || "-" %></td>
+    <td><%= track.year || "-" %></td>
+    <td><%= track.size || "-" %></td>
+</tr>
+<%end%>
+</table>
+<%else%>
+<h2>No music to download :(</h2>
+<% end %>
+<% unless @subdirectories.empty? %>
+<h2>Subfolders available</h2>
+<ul>
+    <% @subdirectories.each do |subdir| %>
+    <a href="/subdir/<%=@parent%><%=subdir%>"><%=subdir%></a>
+    <%end%>
+</ul>
+<%end%>
