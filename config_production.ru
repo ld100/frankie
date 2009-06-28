@@ -1,10 +1,7 @@
-require 'rubygems'
-require 'sinatra'
+require "rubygems"
+require "sinatra"
  
-Sinatra::Application.default_options.merge!(
-  :run => false,
-  :env => :production
-)
- 
-require 'frankie'
-run Sinatra.application
+ENV['RACK_ENV'] = "production"
+
+require "frankie"
+run Sinatra::Application
