@@ -1,0 +1,12 @@
+---
+    environment: development
+    chdir: /Volumes/data/ld100/Projects/personal/frankie
+    address: 127.0.0.1
+    port: 4567
+    pid: /Volumes/data/ld100/Projects/personal/frankie/tmp/thin.pid
+    rackup: /Volumes/data/ld100/Projects/personal/frankie/config_development.ru
+    log: /Volumes/data/ld100/Projects/personal/frankie/log/thin.log
+    max_conns: 1024
+    timeout: 30
+    max_persistent_conns: 512
+    daemonize: true

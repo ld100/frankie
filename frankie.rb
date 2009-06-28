@@ -3,11 +3,7 @@ require 'sinatra'
 require "lib/music_file"
 require "lib/music_crawler"
 
-configure :production, :test, :development do
-  set :files_dir, File.dirname(__FILE__) + "/public/files"
-  set :files_uri_prefix, "/files"
-  set :require_auth, true
-end
+require "config"
 
 helpers do
   def secure_file_name(file_name)
