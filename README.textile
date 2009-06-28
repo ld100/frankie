@@ -9,3 +9,6 @@ Install following ruby gems
     sudo gem install ruby-units
 </code>
 </pre>
+
+h2. 3rd parties
+I borrowed design and Tablecloth lib "Css Globe":http://www.cssglobe.com, hope they won'r be angry on me for that.
