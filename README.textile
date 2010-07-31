@@ -1,6 +1,7 @@
 h1. Frankie the music warez lister
 
 h2. Installation
+
 Install following ruby gems
 <pre>
 <code>
@@ -12,6 +13,7 @@ Install following ruby gems
 </pre>
 
 h2. Startup
+
 Actually you can use any RACK-compatible server to run Frankie, however it has default configuration for "Thin":http://code.macournoyer.com/thin/ web server.
 To run Frankie in development mode with Thin run:
 <pre>
@@ -29,4 +31,5 @@ For production run do:
 And don't forget editing paths your *_config.yml files accourding to your settings.
 
 h2. 3rd parties
+
 I borrowed design and Tablecloth lib "Css Globe":http://www.cssglobe.com, hope they won'r be angry on me for that.
